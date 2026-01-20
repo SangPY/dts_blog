@@ -7,6 +7,11 @@ import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
   {
+    path: '',
+    redirectTo: 'login',
+    pathMatch: 'full',
+  },
+  {
     path: '404',
     component: Page404Component,
     data: {
@@ -40,5 +45,5 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class PagesRoutingModule {
+export class AuthRoutingModule {
 }
