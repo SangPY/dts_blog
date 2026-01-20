@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="dts_blog.API/dts_blog.API.csproj" />
+    <Project Path="dts_blog.Core/dts_blog.Core.csproj" />
+    <Project Path="dts_blog.Data/dts_blog.Data.csproj" />
+    <Project Path="dts_blog.WebApp/dts_blog.WebApp.csproj" />
+  </Folder>
+</Solution>
