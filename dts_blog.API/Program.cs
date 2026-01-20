@@ -1,4 +1,6 @@
+using dts_blog.API;
 using dts_blog.Core.Domain.Identity;
+using dts_blog.Data.EF;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -10,11 +12,11 @@ var connectionString = configuration.GetConnectionString("DefaultConnection");
 
 
 //Config DB Context and ASP.NET Core Identity
-builder.Services.AddDbContext<DbContext>(options =>
+builder.Services.AddDbContext<dtsDbContext>(options =>
                 options.UseSqlServer(connectionString));
 
 builder.Services.AddIdentity<AppUser, AppRole>(options => options.SignIn.RequireConfirmedAccount = false)
-    .AddEntityFrameworkStores<DbContext>();
+    .AddEntityFrameworkStores<dtsDbContext>();
 
 builder.Services.Configure<IdentityOptions>(options =>
 {
@@ -57,5 +59,8 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+//Seeding data
+app.MigrateDatabase();
 
 app.Run();
