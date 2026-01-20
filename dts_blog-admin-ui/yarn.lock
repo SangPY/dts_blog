@@ -1258,12 +1258,12 @@
   resolved "https://registry.yarnpkg.com/@colors/colors/-/colors-1.5.0.tgz#bb504579c1cae923e6576a4f5da43d25f97bdbd9"
   integrity sha512-ooWCrlZP11i8GImSjTHYHLkvFDP48nS4+204nGb1RiX/WXYHmJA2III9/e2DWVabCESdW7hBAEzHRqUn9OUVvQ==
 
-"@coreui/angular-chartjs@~4.5.16":
-  version "4.5.28"
-  resolved "https://registry.yarnpkg.com/@coreui/angular-chartjs/-/angular-chartjs-4.5.28.tgz#0e558e4cebba886c0dd48c6461c63dd8d0e0caba"
-  integrity sha512-XwMecBZXiX+k6sq35qRpPgrzxvyMegknH3LOW23ySdhOUYS0+ZoYHIUAjmPCDynDxe6poFY8cCmxvKxnKFaZDA==
+"@coreui/angular-chartjs@^5.6.8":
+  version "5.6.8"
+  resolved "https://registry.yarnpkg.com/@coreui/angular-chartjs/-/angular-chartjs-5.6.8.tgz#d8c776010ce3e740f75ad7a0ea8888f48706c940"
+  integrity sha512-n3J8fygOZU6+FMBB4UvXKqLzKEqHzN71h3TDCZY4Or4R9We1ZHb0aFJM+nksWCEIvBsPAqFIfDKgb9iaZWLK0g==
   dependencies:
-    lodash-es "^4.17.21"
+    lodash-es "^4.17.22"
     tslib "^2.3.0"
 
 "@coreui/angular@~4.5.16":
@@ -1612,6 +1612,11 @@
   dependencies:
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
+
+"@kurkle/color@^0.3.0":
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/@kurkle/color/-/color-0.3.4.tgz#4d4ff677e1609214fc71c580125ddddd86abcabf"
+  integrity sha512-M5UknZPHRu3DEDWoipU6sE8PdkZ6Z/S+v4dD+Ke8IaNlpdSQah50lz1KtcFBa2vsdOnwbbnxJwVM4wty6udA5w==
 
 "@leichtgewicht/ip-codec@^2.0.1":
   version "2.0.5"
@@ -2631,6 +2636,13 @@ chart.js@^3.9.1:
   version "3.9.1"
   resolved "https://registry.yarnpkg.com/chart.js/-/chart.js-3.9.1.tgz#3abf2c775169c4c71217a107163ac708515924b8"
   integrity sha512-Ro2JbLmvg83gXF5F4sniaQ+lTbSv18E+TIf2cOeiH1Iqd2PGFOtem+DUufMZsCJwFE7ywPOpfXFBwRTGq7dh6w==
+
+chart.js@^4.5.1:
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/chart.js/-/chart.js-4.5.1.tgz#19dd1a9a386a3f6397691672231cb5fc9c052c35"
+  integrity sha512-GIjfiT9dbmHRiYi6Nl2yFCq7kkwdkp1W/lp2J99rX0yo9tgJGn3lKQATztIjb5tVtevcBtIdICNWqlq5+E8/Pw==
+  dependencies:
+    "@kurkle/color" "^0.3.0"
 
 chokidar@3.5.3:
   version "3.5.3"
@@ -4618,7 +4630,7 @@ locate-path@^7.1.0:
   dependencies:
     p-locate "^6.0.0"
 
-lodash-es@^4.17.21:
+lodash-es@^4.17.21, lodash-es@^4.17.22:
   version "4.17.22"
   resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.22.tgz#eb7d123ec2470d69b911abe34f85cb694849b346"
   integrity sha512-XEawp1t0gxSi9x01glktRZ5HDy0HXqrM0x5pXQM98EaI0NxO6jVM7omDOxsuEo5UIASAnm2bRp1Jt/e0a2XU8Q==
