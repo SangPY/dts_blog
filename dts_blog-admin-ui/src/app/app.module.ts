@@ -3,6 +3,11 @@ import { HashLocationStrategy, LocationStrategy, PathLocationStrategy } from '@a
 import { BrowserModule, Title } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
+import {
+  HashLocationStrategy,
+  LocationStrategy,
+  PathLocationStrategy,
+} from '@angular/common';
 
 import { NgScrollbarModule } from 'ngx-scrollbar';
 
@@ -37,6 +42,8 @@ import {
 } from '@coreui/angular';
 
 import { IconModule, IconSetService } from '@coreui/icons-angular';
+import { ADMIN_API_BASE_URL } from './api/admin-api.service.generated';
+import { environment } from '../environments/environment';
 
 const APP_CONTAINERS = [
   DefaultFooterComponent,
@@ -75,10 +82,8 @@ const APP_CONTAINERS = [
     NgScrollbarModule
   ],
   providers: [
-    {
-      provide: LocationStrategy,
-      useClass: HashLocationStrategy
-    },
+    { provide: ADMIN_API_BASE_URL, useValue: environment.API_URL },
+    { provide: LocationStrategy, useClass: HashLocationStrategy },
     IconSetService,
     Title
   ],
