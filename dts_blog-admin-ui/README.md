@@ -220,3 +220,6 @@ Thanks to all the backers and sponsors! Support this project by [becoming a back
 yarn add nswag
 yarn nswag-admin
 chay lenh nho bat BE, API len moi thanh cong
+
+yarn add primeng
+yarn add primeicons
