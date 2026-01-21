@@ -1,12 +1,10 @@
 import { AfterContentInit, ChangeDetectionStrategy, ChangeDetectorRef, Component, Input } from '@angular/core';
-import { WidgetStatDComponent } from "@coreui/angular";
 
 @Component({
   selector: 'app-widgets-brand',
   templateUrl: './widgets-brand.component.html',
   styleUrls: ['./widgets-brand.component.scss'],
-  changeDetection: ChangeDetectionStrategy.Default,
-  imports: [WidgetStatDComponent]
+  changeDetection: ChangeDetectionStrategy.Default
 })
 export class WidgetsBrandComponent implements AfterContentInit {
 

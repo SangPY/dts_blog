@@ -36,7 +36,7 @@ import { SystemRoutingModule } from './system-routing.module';
     ChartjsModule,
     AvatarModule,
     TableModule
-
+    
   ],
   declarations: []
 })

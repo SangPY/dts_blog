@@ -10,7 +10,6 @@ import {
   SharedModule,
   WidgetModule
 } from '@coreui/angular';
-
 import { IconModule } from '@coreui/icons-angular';
 import { ChartjsModule } from '@coreui/angular-chartjs';
 
