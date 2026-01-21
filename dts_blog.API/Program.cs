@@ -1,4 +1,5 @@
 using dts_blog.API;
+using dts_blog.API.Filters;
 using dts_blog.API.Services;
 using dts_blog.Core.ConfigOptions;
 using dts_blog.Core.Domain.Content;
