@@ -1,4 +1,6 @@
 using dts_blog.API;
+using dts_blog.API.Services;
+using dts_blog.Core.ConfigOptions;
 using dts_blog.Core.Domain.Content;
 using dts_blog.Core.Domain.Identity;
 using dts_blog.Core.Models.Content;
@@ -66,6 +68,12 @@ foreach (var service in services)
 
 builder.Services.AddAutoMapper(typeof(PostInListDto).Assembly);
 
+//Authen and author
+builder.Services.Configure<JwtTokenSettings>(configuration.GetSection("JwtTokenSettings"));
+builder.Services.AddScoped<SignInManager<AppUser>, SignInManager<AppUser>>();
+builder.Services.AddScoped<UserManager<AppUser>, UserManager<AppUser>>();
+builder.Services.AddScoped<ITokenService, TokenService>();
+builder.Services.AddScoped<RoleManager<AppRole>, RoleManager<AppRole>>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
